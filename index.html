@@ -102,6 +102,15 @@
         color: var(--secondary-text);
       }
 
+      /*Grid container*/
+      .container {
+        display: grid;
+        gap: 1.5rem;
+        min-width: 0;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;  
+      }
+
       /* Theme toggle switch */
       .toggle-switch {
         position: fixed;
@@ -158,22 +167,20 @@
       />
     </div>
 
-    <main class="flex-grow container mx-auto px-6 py-12 max-w-5xl">
+    <main class="flex-grow  mx-auto px-6 py-12 max-w-5xl">
       <h1 class="text-4xl sm:text-5xl font-extrabold mb-6 tracking-tight">
-        Arkaj Investments 
+        Arkaj Ivestments
       </h1>
         <span class="text-4xl sm:text-5xl font-extrabold mb-6 tracking-tight text-green-600 dark:text-green-400" >
           Coming Soon . . .
         </span>
 
       <p class="mb-8 text-lg text-gray-400 dark:text-gray-300 max-w-xl"></p>
-        We are cultivating innovative investment opportunities for a sustainable
-        agricultural future. Stay tuned while we prepare something exceptional
-        for you.
+        Fostering trust and nurturing prosperity through integrity, collaboration, and growth, creating lasting relationships and sustainable success for communities and individuals.
       </p>
 
       <!-- Design 1: Centered Simple Layout -->
-      <section id="design-1" class="mb-20">
+      <section id="design-1" class="mb-10">
         <div class="max-w-md mx-auto text-center">
           <form class="flex mb-4" aria-label="Subscribe to newsletter form">
             <input
@@ -188,8 +195,13 @@
             Get notified when we launch
           </p>
         </div>
-        <section class="mt-12 card max-w-md mx-auto">
-          <h2 class="text-xl font-bold mb-4">About Us</h2>
+      </section>
+
+        <!--grid starting-->
+        <div class="container">
+
+          <div class="card ">
+            <h2 class="text-xl font-bold mb-4">About Us</h2>
             <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm"></p>
             We invite individuals to invest directly in the cropping cycles of
             farmers. These funds provide essential resources — seeds,
@@ -197,13 +209,36 @@
             approaches, Arkaj facilitates the journey of produce to market,
             ensuring that both investors and farmers share in the fruits of
             success.
-            </p>
-        </section>
-      </section>
+          </p>
+        </div>
 
-      <!-- Design 2: Split Layout -->
-      <section id="design-2" class="mb-20 hidden md:flex md:gap-12">
-        <div class="flex-1 flex flex-col justify-center card shadow-lg">
+          <div class="card ">
+            <h2 class="text-xl font-bold mb-4">About Us</h2>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm"></p>
+            We invite individuals to invest directly in the cropping cycles of
+            farmers. These funds provide essential resources — seeds,
+            fertilizers, equipment, and timely assistance. As the harvest
+            approaches, Arkaj facilitates the journey of produce to market,
+            ensuring that both investors and farmers share in the fruits of
+            success.
+          </p>
+        </div>
+          
+        <div class="card ">
+            <h2 class="text-xl font-bold mb-4">About Us</h2>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm"></p>
+            We invite individuals to invest directly in the cropping cycles of
+            farmers. These funds provide essential resources — seeds,
+            fertilizers, equipment, and timely assistance. As the harvest
+            approaches, Arkaj facilitates the journey of produce to market,
+            ensuring that both investors and farmers share in the fruits of
+            success.
+          </p>
+        </div>
+        
+      
+      
+        <!-- <div class=" card shadow-lg">
           <h2 class="text-3xl font-extrabold mb-6">Coming Soon</h2>
           <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
             Exciting agricultural investment platform launching soon. Sign up to
@@ -211,106 +246,40 @@
           </p>
           <form class="flex" aria-label="Subscribe to newsletter form">
             <input
-              type="email"
-              placeholder="Email address"
-              aria-label="Email address"
-              required
+            type="email"
+            placeholder="Email address"
+            aria-label="Email address"
+            required
             />
             <button type="submit" class="btn-primary ml-2">Notify Me</button>
           </form>
-        </div>
+        </div> -->
         <div
-          class="flex-1 card bg-green-900 text-green-200 p-8 rounded-lg relative overflow-hidden"
+        class="card bg-green-900 text-green-200 p-8 rounded-lg relative overflow-hidden"
         >
-          <h3 class="text-2xl font-semibold mb-4">About AgriInvest</h3>
-          <p class="text-green-100 text-sm leading-relaxed opacity-90">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Curabitur dignissim sollicitudin nunc, ut efficitur justo faucibus
-            at.
-          </p>
-          <!-- Decorative bubbles for visual interest -->
-          <div
-            aria-hidden="true"
-            class="absolute top-4 right-4 w-24 h-24 rounded-full bg-green-400 opacity-20 blur-xl"
-          ></div>
-          <div
-            aria-hidden="true"
-            class="absolute bottom-6 left-6 w-16 h-16 rounded-full bg-green-600 opacity-25 blur-md"
-          ></div>
-        </div>
-      </section>
-
-      <!-- Design 3: Artistic Card Centered -->
-      <section id="design-3" class="mb-20 hidden">
+        <h3 class="text-2xl font-semibold mb-4">About Arkaj</h3>
+        <p class="text-green-100 text-sm leading-relaxed opacity-90">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Curabitur dignissim sollicitudin nunc, ut efficitur justo faucibus
+          at.
+        </p>
+        <!-- Decorative bubbles for visual interest -->
         <div
-          class="max-w-3xl mx-auto card p-10 bg-gradient-to-br from-green-900 to-green-700 text-green-50 shadow-2xl relative rounded-xl overflow-hidden"
-        >
-          <h2 class="text-4xl font-extrabold mb-6 text-center">
-            Something is Growing...
-          </h2>
-          <p
-            class="mb-8 text-center text-green-200 text-lg max-w-xl mx-auto leading-relaxed"
-          >
-            We're nurturing new investment possibilities in agriculture.
-            Subscribe to be the first to know when we bloom.
-          </p>
-
-          <form
-            class="flex max-w-md mx-auto"
-            aria-label="Subscribe to newsletter form"
-          >
-            <input
-              type="email"
-              placeholder="Enter your email"
-              aria-label="Email address"
-              required
-              class="rounded-l-md"
-            />
-            <button
-              type="submit"
-              class="btn-secondary rounded-r-md font-semibold tracking-wider"
-            >
-              Notify Me
-            </button>
-          </form>
-
-          <section
-            class="mt-12 bg-green-800 bg-opacity-40 p-6 rounded-md text-green-100 shadow-inner max-w-md mx-auto"
-          >
-            <h3 class="text-xl font-semibold mb-4 text-center">About Us</h3>
-            <p class="text-sm leading-relaxed text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pellentesque et lacus nec lorem efficitur euismod.
-            </p>
-          </section>
-
-          <!-- Artistic bubbles shapes -->
-          <div
-            aria-hidden="true"
-            class="absolute top-5 left-7 w-20 h-20 bg-green-500 opacity-20 rounded-full filter blur-lg"
-          ></div>
-          <div
-            aria-hidden="true"
-            class="absolute bottom-12 right-10 w-28 h-28 bg-green-700 opacity-25 rounded-full filter blur-xl"
-          ></div>
-        </div>
-      </section>
-
-      <!-- Design Switcher Buttons
-    <nav class="flex justify-center gap-4 mb-12" aria-label="Select design layout">
-      <button id="btn-design-1" class="btn-primary px-6 py-2 rounded-lg font-semibold" aria-pressed="true">Design 1</button>
-      <button id="btn-design-2" class="btn-primary px-6 py-2 rounded-lg font-semibold bg-green-800" aria-pressed="false">Design 2</button>
-      <button id="btn-design-3" class="btn-primary px-6 py-2 rounded-lg font-semibold bg-green-800" aria-pressed="false">Design 3</button>
-    </nav> -->
+        aria-hidden="true"
+        class="absolute top-4 right-4 w-24 h-24 rounded-full bg-green-400 opacity-20 blur-xl"
+        ></div>
+        <div
+        aria-hidden="true"
+        class="absolute bottom-6 left-6 w-16 h-16 rounded-full bg-green-600 opacity-25 blur-md"
+        ></div>
+      </div>
+    </div>
+      
+      
     </main>
 
-    <footer
-      class="text-center text-sm text-gray-500 dark:text-gray-400 pb-6 select-none"
-    >
-      © 2024 AgriInvest. All rights reserved.
-    </footer>
+
 
     <script>
       const themeToggle = document.getElementById("theme-toggle");
