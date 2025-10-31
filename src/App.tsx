@@ -1,6 +1,6 @@
 import Vid from './assets/background2.mp4'
 import { useState} from 'react';
-import {  ChevronDown, Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
+import {  ChevronDown, Facebook, Instagram, Linkedin } from 'lucide-react';
 import type { FormEvent } from 'react'; // <-- add "type" here
 function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -95,7 +95,12 @@ function App() {
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            Explore freshly sourced and<br />milled food ingredients..
+
+
+            Cultivating Trust <br/>Nurturing Prosperity
+            {/*<br />milled food ingredients..*/}
+
+
           </h1>
 
           <div className="relative inline-block">
@@ -130,7 +135,7 @@ function App() {
             <div className="bg-teal-800 text-white rounded-3xl p-12 relative overflow-hidden">
               <div className="relative z-10">
                 <p className="text-lg mb-6 leading-relaxed">
-                  We <span className="font-semibold">simplify</span> complex food supply and distribution channels, enabling one-stop sourcing and building global carbon-efficient supply chains for over <span className="text-yellow-300 font-bold">2000 satisfied partner</span> food businesses.
+                  Arkaj connects urban investors, farmers, and food buyers through crop-backed financing. <span className="text-yellow-300 font-bold">enabling transparent, efficient, and sustainable</span> agricultural supply chains in India. 
                 </p>
                 <p className="text-lg mb-8">
                   Want to partner with us? Write to us:<br />
@@ -256,7 +261,7 @@ function App() {
 
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">About Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">Our Vision</h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -269,10 +274,11 @@ function App() {
 
             <div className="text-gray-700 space-y-6">
               <p className="text-lg leading-relaxed">
-                We are India's leading SaaS-B2B food commerce platform serving Asia, the Middle East, and Africa. We are revolutionizing food sourcing and processing by making it faster, more efficient, and more sustainable for humanity. We are on a mission to make the food economy more resilient, reliable and rewarding for humanity. Arkaj is dedicated to building The Good Food Economy.
+                Arkaj transcends the role of a mere fintech platform; it serves as a bridge connecting everyday individuals with the farmers who nourish us. For centuries, agriculture has been the lifeblood of India, yet farmers frequently face challenges in accessing timely capital. Arkaj aims to reshape that narrative.
+
               </p>
               <p className="text-lg leading-relaxed">
-                As we continue to scale our robust network across the globe, we are guided by the collective value system of a mission-driven young team!
+                We invite individuals to invest directly in the cropping cycles of farmers. These funds provide essential resources — seeds, fertilizers, equipment, and timely assistance. As the harvest approaches, Arkaj facilitates the journey of produce to market, ensuring that both investors and farmers share in the fruits of success.
               </p>
               <button className="bg-yellow-300 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
                 More about Us
@@ -341,22 +347,16 @@ function App() {
 
           <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://www.facebook.com/people/Arkaj/61581160820450/" target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://www.instagram.com/arkaj_2025/" target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+	            <a href="https://www.linkedin.com/company/arkaj-investments" target="_blank" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-            </div>
+                          </div>
 
             <div className="flex items-center space-x-8">
               <p className="text-gray-600 text-sm">© Arkaj Service Private Limited 2025. All rights reserved.</p>
