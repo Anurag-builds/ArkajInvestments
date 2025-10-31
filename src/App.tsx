@@ -1,10 +1,11 @@
 import Vid from "./assets/background2.mp4";
 import { useState } from "react";
-import { ChevronDown, Facebook, Instagram, Linkedin } from "lucide-react";
+// import {ChevronDown} from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import type { FormEvent } from "react"; // <-- add "type" here
 function App() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedCountry, setSelectedCountry] = useState("");
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [selectedCountry, setSelectedCountry] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,21 +17,21 @@ function App() {
   });
   const [newsletterEmail, setNewsletterEmail] = useState("");
 
-  const countries = [
-    "United States",
-    "United Kingdom",
-    "Canada",
-    "Australia",
-    "Germany",
-    "France",
-    "India",
-    "Japan",
-  ];
+  // const countries = [
+  //   "United States",
+  //   "United Kingdom",
+  //   "Canada",
+  //   "Australia",
+  //   "Germany",
+  //   "France",
+  //   "India",
+  //   "Japan",
+  // ];
 
-  const handleCountrySelect = (country: string) => {
-    setSelectedCountry(country);
-    setIsDropdownOpen(false);
-  };
+  // const handleCountrySelect = (country: string) => {
+  //   setSelectedCountry(country);
+  //   setIsDropdownOpen(false);
+  // };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
